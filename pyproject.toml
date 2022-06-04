@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "mpspkg"
+version = "0.1.0"
+description = "Modern Python setup for packages."
+authors = ["Thomas van Hees <8236465+thomasvanhees@users.noreply.github.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1.2"
+pytest-cov = "^3.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+addopts = "--strict-markers"
+markers = [
+    "unit_test: mark as a unit test",
+    "integration_test: mark as integration test"
+]
+log_level = "DEBUG"
+log_format = "%(asctime)s [%(levelname)s] %(message)s"
+log_date_format = "%Y-%m-%d %H:%M:%S"
