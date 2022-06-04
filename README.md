@@ -1,5 +1,9 @@
 # Modern Python Setup - Packages
 
+## Inspiration
+
+The Poetry GitHub repository: https://github.com/python-poetry/poetry.
+
 ### `pipx`
 
 ### `poetry`
@@ -16,6 +20,11 @@ Commands:
 - `pre-commit run --all-files`
 - `pre-commit autoupdate`
 - `pre-commit gc`: Garbage collect all virtual environments.
+
+#### `pre-commit` hooks
+
+- `pycln`: https://hadialqattan.github.io/pycln/#/
+- `flake8`: https://flake8.pycqa.org/en/latest/index.html#quickstart
 
 ### `pytest`
 
