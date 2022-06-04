@@ -9,7 +9,7 @@ def fact(n: int) -> int:
     logger.debug(f"Calculating factorial of {n}.")
     if n == 0:
         return 1
-    else: 
+    else:
         return n * fact(n - 1)
 
 

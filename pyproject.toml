@@ -16,7 +16,7 @@ requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.pytest.ini_options]
-addopts = "--strict-markers"
+addopts = "--strict-markers --cov=mpspkg --cov-fail-under 70 --cov-report=term-missing -vvv"
 markers = [
     "unit_test: mark as a unit test",
     "integration_test: mark as integration test"
