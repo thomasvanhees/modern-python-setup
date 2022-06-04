@@ -1,5 +1,7 @@
 import logging
 
+import pandas
+
 
 logger = logging.getLogger(__name__)
 
@@ -17,3 +19,9 @@ def uncovered_function(x: str) -> None:
     """Function not covered by a unit test."""
     x = "You entered: " + x
     return x
+
+
+def create_df() -> pandas.DataFrame:
+    return pandas.DateFrame(
+        {"Id": [1, 2, 3], "Name": ["Jaap", "Pim", "Mies"], "Age": [21, 22, 23]}
+    )

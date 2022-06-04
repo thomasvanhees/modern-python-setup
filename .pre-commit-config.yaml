@@ -1,5 +1,6 @@
 # See https://pre-commit.com for more information
 # See https://pre-commit.com/hooks.html for more hooks
+fail_fast: true
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.2.0
@@ -16,6 +17,15 @@ repos:
       - id: no-commit-to-branch
         args: [--branch, main, --pattern, release/.*]
       - id: trailing-whitespace
+  - repo: https://github.com/pre-commit/pygrep-hooks
+    rev: v1.9.0
+    hooks:
+      - id: python-no-eval
+      - id: python-use-type-annotations
+  - repo: https://github.com/pycqa/isort
+    rev: "5.10.1"
+    hooks:
+      - id: isort
   - repo: https://github.com/psf/black
     rev: "22.3.0"
     hooks:

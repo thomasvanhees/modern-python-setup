@@ -1,6 +1,7 @@
 from math import factorial
 
 import pytest
+
 from mpspkg.foo import fact
 
 
