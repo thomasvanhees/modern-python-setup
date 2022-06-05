@@ -117,14 +117,6 @@ pytz = ">=2020.1"
 test = ["hypothesis (>=5.5.3)", "pytest (>=6.0)", "pytest-xdist (>=1.31)"]
 
 [[package]]
-name = "pandas-stubs"
-version = "1.2.0.60"
-description = "Type annotations for Pandas"
-category = "dev"
-optional = false
-python-versions = "*"
-
-[[package]]
 name = "pluggy"
 version = "1.0.0"
 description = "plugin and hook calling mechanisms for python"
@@ -237,7 +229,7 @@ python-versions = ">=3.7"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8,<4.0"
-content-hash = "d506ad56532cbd423d0ac3aad53f84513dee2a2c6ad22ccf29848495953b376a"
+content-hash = "a080c048827d2e0f3d538312920044d48bd52860aec68875f9c2d89737a125c1"
 
 [metadata.files]
 atomicwrites = [
@@ -378,10 +370,6 @@ pandas = [
     {file = "pandas-1.4.2-cp39-cp39-win32.whl", hash = "sha256:d0d4f13e4be7ce89d7057a786023c461dd9370040bdb5efa0a7fe76b556867a0"},
     {file = "pandas-1.4.2-cp39-cp39-win_amd64.whl", hash = "sha256:09d8be7dd9e1c4c98224c4dfe8abd60d145d934e9fc1f5f411266308ae683e6a"},
     {file = "pandas-1.4.2.tar.gz", hash = "sha256:92bc1fc585f1463ca827b45535957815b7deb218c549b7c18402c322c7549a12"},
-]
-pandas-stubs = [
-    {file = "pandas-stubs-1.2.0.60.tar.gz", hash = "sha256:4e0ee43e7a8449d1bdd8c207d275edef4acee20be809adf02fa60a9d7df5c5cc"},
-    {file = "pandas_stubs-1.2.0.60-py3-none-any.whl", hash = "sha256:98c41ecf7ef20149570d31b4bb52583891eab112df5d075d6d34003987606dd8"},
 ]
 pluggy = [
     {file = "pluggy-1.0.0-py2.py3-none-any.whl", hash = "sha256:74134bbf457f031a36d68416e1509f34bd5ccc019f0bcc952c7b909d06b37bd3"},
