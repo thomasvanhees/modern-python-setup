@@ -7,6 +7,8 @@ import logging
 
 import pandas
 
+from mpspkg.baz import baz_a
+
 
 logger = logging.getLogger(__name__)
 
@@ -24,7 +26,7 @@ def fact(n: int) -> int:
         return n * fact(n - 1)
 
 
-def uncovered_function(x: str) -> None:
+def uncovered_function(x: str) -> str:
     """Form a nice string.
 
     Function not covered by a unit test.
@@ -32,7 +34,7 @@ def uncovered_function(x: str) -> None:
     :param x: The string you want to modify.
     :returns: Another string.
     """
-    x = "You entered: " + x
+    x = "You entered: " + x + str(baz_a(6))
     return x
 
 
@@ -58,7 +60,7 @@ class Dummy:
         """
         self.bla = y
 
-    def m(self) -> None:
+    def m(self) -> str:
         """Return the bla parameter.
 
         :returns: The bla.
