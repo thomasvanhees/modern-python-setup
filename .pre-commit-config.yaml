@@ -38,3 +38,15 @@ repos:
     rev: 4.0.1
     hooks:
       - id: flake8
+        additional_dependencies:
+          - flake8-annotations
+          - flake8-broken-line
+          - flake8-bugbear
+          - flake8-comprehensions
+          - flake8-eradicate
+          - flake8-quotes
+          - flake8-simplify
+          - flake8-use-fstring
+          - pep8-naming
+          - flake8-docstrings
+          - darglint
