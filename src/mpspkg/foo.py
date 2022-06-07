@@ -43,7 +43,7 @@ def create_df() -> pandas.DataFrame:
 
     :returns: A data frame.
     """
-    return pandas.DateFrame(
+    return pandas.DataFrame(
         {"Id": [1, 2, 3], "Name": ["Jaap", "Pim", "Mies"], "Age": [21, 22, 23]}
     )
 
