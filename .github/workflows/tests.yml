@@ -1,0 +1,32 @@
+name: Tests
+
+on:
+  push:
+    paths-ignore:
+      - 'docs/**'
+      - '.github/workflows/docs.yml'
+    branches:
+      - 'feature/*'
+  pull_request:
+    branches:
+      - '*'
+
+jobs:
+  tests:
+    name: Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.9.7
+      - name: Set up Poetry
+        run: |
+          pip install poetry
+      - name: Set up virtual environment
+        run: |
+          poetry install -vvv
+      - name: Run Pytest
+        run: poetry run pytest
+      

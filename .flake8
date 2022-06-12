@@ -1,0 +1,24 @@
+[flake8]
+max-line-length = 88
+ban-relative-imports = true
+# flake8-use-fstring: https://github.com/MichaelKim0407/flake8-use-fstring#--percent-greedy-and---format-greedy
+format-greedy = 1
+inline-quotes = double
+extend-select =
+    # B902: Invalid first argument used for method.
+    B902,
+    # D417: Missing argument descriptions in the docstring
+    D417
+extend-ignore =
+    # ANN101: Missing type annotation for self in method.
+    ANN101,
+    # ANN102: Missing type annotation for cls in classmethod.
+    ANN102
+per-file-ignores =
+    # ANN201: Missing return type annotation for public function.
+    # D100 Missing docstring in public module.
+    # D104 Missing docstring in public package.
+    tests/*:ANN201,D100,D104
+# flake8-docstrings: https://www.pydocstyle.org/en/stable/error_codes.html
+docstring-convention=pep257
+docstring-style=sphinx
